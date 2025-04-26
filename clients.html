@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Clients - JR Techno Automation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">JR Techno Automation</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="internal-page">
+    <img src="logo.png" alt="Company Logo" class="page-logo" data-aos="fade-down"/>
+    <h1 data-aos="fade-up">Our Clients</h1>
+    <section class="service-grid">
+      <div class="service-card" data-aos="flip-up">
+        <h3>Trusted by Leading Industries</h3>
+        <p>We proudly serve top organizations across multiple sectors, ensuring operational excellence through trusted solutions and professional service.</p>
+      </div>
+      <div class="service-card" data-aos="flip-up">
+        <h3>Commitment to Quality</h3>
+        <p>Our unwavering commitment to innovation, quality, and customer-centric solutions has earned us enduring client relationships nationwide.</p>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+<script>
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("scrollTopBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - JR Techno Automation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">JR Techno Automation</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="internal-page">
+    <img src="logo.png" alt="Company Logo" class="page-logo" data-aos="fade-down"/>
+    <h1 data-aos="fade-up">Our Services</h1>
+    <section class="service-grid">
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Electrical Installation & Maintenance</h3>
+        <p>Expert installation, testing, and maintenance of electrical systems for industrial and commercial sectors with adherence to safety standards.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Electronic Systems Troubleshooting</h3>
+        <p>Skilled diagnostics and repair of complex systems, minimizing downtime and maximizing efficiency.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Electrical Panel Design & Fabrication</h3>
+        <p>Customized control panels ensuring efficient power management and premium-grade performance.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Machinery Diagnostics & Repair</h3>
+        <p>Advanced diagnostics and rapid repair solutions to restore peak machinery performance.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in">
+        <h3>Jig & Fixture Fabrication</h3>
+        <p>Custom precision jigs and fixtures designed to enhance manufacturing accuracy and productivity.</p>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+<script>
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("scrollTopBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
